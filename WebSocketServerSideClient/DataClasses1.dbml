@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BlogTestsDb" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=osxjv26k62.database.windows.net,1433;Initial Catalog=BlogTestsDb;User ID=suppchat@osxjv26k62" SettingsObjectName="WebSocketServerSideClient.Properties.Settings" SettingsPropertyName="BlogTestsDbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.StockPriceHistory" Member="StockPriceHistories">
+    <Type Name="StockPriceHistory">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Price" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="StockCode" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="PublicationDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
